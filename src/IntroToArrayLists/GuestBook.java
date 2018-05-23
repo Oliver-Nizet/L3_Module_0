@@ -59,7 +59,6 @@ public class GuestBook implements ActionListener {
 			String gl = "";
 			for (int i = 0; i < names.size(); i++) {
 				gl += "Guest #" + (i + 1) + ": " + names.get(i) + "\n";
-
 			}
 			JOptionPane.showMessageDialog(null, gl);
 		}
