@@ -1,5 +1,11 @@
 package IntroToHashMaps;
 
+import java.util.HashMap;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
 public class LogSearch {
   /* 
 	 * Crate a HashMap of Integers for the keys and Strings for the values.
@@ -28,4 +34,30 @@ public class LogSearch {
 	 * 				is not in the list. 
 	 *
 	 * */
+	HashMap<Integer, String> log = new HashMap<Integer, String>();
+	JFrame f;
+	JPanel p;
+	JButton b1;
+	JButton b2;
+	JButton b3;
+	public static void main(String[] args) {
+		LogSearch ls = new LogSearch();
+	}
+	LogSearch(){
+		f = new JFrame();
+		p = new JPanel();
+		b1 = new JButton();
+		b2 = new JButton();
+		b3 = new JButton();
+		f.add(p);
+		b1.setText("Add Entry");
+		b2.setText("Search by ID");
+		b3.setText("View List");
+		p.add(b1);
+		p.add(b2);
+		p.add(b3);
+		f.setVisible(true);
+		f.pack();
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
 }
